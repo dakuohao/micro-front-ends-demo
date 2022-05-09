@@ -1,0 +1,31 @@
+{
+  "name": "micro-frond-ends-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "",
+  "license": "MIT",
+  "scripts": {
+    "all:install": "npm-run-all --serial install:*",
+    "all:serve": "npm-run-all --parallel serve:*",
+
+    "install:micro-frond-ends-demo": "yarn",
+    "install:vue2-demo": "cd vue2-demo && yarn",
+    "install:vue3-demo": "cd vue3-demo && yarn",
+    "install:react-demo": "cd react-demo && yarn",
+    "install:angular-demo": "cd angular-demo && yarn",
+    "install:h5-demo": "cd h5-demo && yarn",
+    "install:main-vue2": "cd main-vue2 && yarn",
+    "install:main-react": "cd main-react && yarn",
+
+    "serve:vue2-demo": "cd vue2-demo && yarn serve",
+    "serve:vue3-demo": "cd vue3-demo && yarn serve",
+    "serve:react-demo": "cd react-demo && yarn serve",
+    "serve:angular-demo": "cd angular-demo && yarn serve",
+    "serve:h5-demo": "cd h5-demo && yarn serve",
+    "serve:main-vue2": "cd main-vue2 && yarn serve",
+    "serve:main-react": "cd main-react && yarn serve"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}
